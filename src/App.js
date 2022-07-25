@@ -1,4 +1,3 @@
-// DEPENDENCIES
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // PAGES
@@ -12,6 +11,9 @@ import NavBar from './Components/NavBar';
 import './App.css';
 
 export default function App() {
+
+
+
   return (
     <div className='App'>
       <Router>
