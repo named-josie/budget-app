@@ -19,13 +19,13 @@ export default function App() {
       <Router>
         <NavBar />
         <main>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/' element={<Index />} />
-            <Route path='/' element={<New />} />
-            <Route path='/' element={<Show />} />
-            <Route path='/' element={<Edit />} />
-            <Route path='*' element={<FourOFour />} />
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/transaction" element={<Index />} />
+            <Route path="/transaction/new" element={<New />} />
+            <Route path="/transaction/:index" element={<Show />} />
+            <Route path="/transaction/:index/edit" element={<Edit />} />
+            <Route path="*" element={<FourOFour />} />
           </Routes>
         </main>
       </Router>

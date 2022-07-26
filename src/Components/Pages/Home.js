@@ -3,7 +3,9 @@ export default function Home() {
     <div className='Home'>
       <h1>Welcome to Quantum Finance</h1>
       <br></br>
-      <p>Bugdeting Starts Here!</p>
+      <h3>Bugdeting Starts Here!</h3>
+      <p>Income</p> 
+      <p>Expenses</p>
     </div>
   );
 }
