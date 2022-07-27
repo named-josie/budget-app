@@ -35,19 +35,18 @@ export default function BudgetNewForm() {
         <label htmlFor="date">Date:</label>
         <input
           id="date"
-          type="text"
+          type="date"
           value={transaction.date}
-          placeholder="00/00/0000"
           onChange={handleTextChange}
           required
         />
-        <label htmlFor="item_name">Name:</label>
+        <label htmlFor="item_name">Item Name:</label>
         <input
           id="item_name"
           value={transaction.item_name}
           type="text"
           onChange={handleTextChange}
-          placeholder="Neflix"
+          placeholder="Item Name"
           required
         />
         <label htmlFor="amount">Amount:</label>

@@ -45,25 +45,25 @@ export default function BudgetEditForm() {
   return (
     <div className="New">
       <form onSubmit={handleSubmit} autocomplete="off">
-        <label htmlFor="date">Date</label>
+        <label htmlFor="date">Date:</label>
         <input
           id="date"
           type="date"
           required
           value={transaction.date}
-          placeholder="date"
+          
           onChange={handleTextChange}
         />
-        <label htmlFor="item_name">Name</label>
+        <label htmlFor="item_name">Item Name:</label>
         <input
           id="item_name"
           value={transaction.item_name}
           type="text"
           onChange={handleTextChange}
-          placeholder="name"
+          placeholder="Item name"
           required
         />
-        <label htmlFor="amount">Amount</label>
+        <label htmlFor="amount">Amount:</label>
         <input
           id="amount"
           type="number"
@@ -72,21 +72,24 @@ export default function BudgetEditForm() {
           placeholder="amount"
           onChange={handleTextChange}
         />
-        <label htmlFor="from">From</label>
+        <label htmlFor="from">From:</label>
         <input
           id="from"
           type="text"
           name="from"
           value={transaction.from}
           onChange={handleTextChange}
-          placeholder="from"
+          placeholder="From"
         />
 
-        <input type="submit" value="Edit Item" />
-        <label htmlFor="category">Choose a category:</label>
-<select>
-  <option>{transaction.category}</option>
-</select>
+<label htmlFor="category">Category:</label>
+        <input
+          id="category"
+          value={transaction.category}
+          type="text"
+          onChange={handleTextChange}
+          placeholder="Category"
+        />
       </form>
       <Link to={`/transaction/${index}`}>
         <button>Back</button>

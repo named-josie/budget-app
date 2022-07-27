@@ -21,7 +21,7 @@ export default function BudgetDetails() {
         .catch(() => {
           navigate("/not_found");
         });
-    }, [index, navigate]);
+    }, [index,navigate]);
     const handleDelete = () => {
       axios
         .delete(`${API}/transaction/${index}`)
@@ -35,6 +35,10 @@ export default function BudgetDetails() {
   
     return (
       <div className='transaction_show' >
+        <div>
+       
+        </div>
+        
         <p>Date: {transaction.date}</p>
         <p>Name: {transaction.item_name}</p>
         <p>Amount: ${transaction.amount}</p>
