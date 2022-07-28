@@ -7,7 +7,7 @@ function Budget({ transaction, index }) {
       <div className="Budget">
         <Link to={`/transaction/${index}`}>{transaction.item_name}</Link>
       </div>
-      <td>{transaction.amount}</td>
+      <td> $ {transaction.amount}</td>
     </tr>
   );
 }

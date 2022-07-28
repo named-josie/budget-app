@@ -1,0 +1,46 @@
+.home-page {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    justify-content: center;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    background-color: black;   
+opacity: .98;
+}
+
+
+
+.home-title {
+    padding-top: 10px;
+    font-family: 'Michroma', sans-serif;
+    font-size: 60px;
+    color: #52A5EF;
+    text-align: center;
+    padding-bottom: 1em;
+    margin: auto;
+}
+
+.home-title2 {
+    padding-top: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: #52A5EF;
+    text-align: center;
+    padding-bottom: 1em;
+    margin: auto;
+}
+.home-image {
+margin: auto;
+display: block;  
+padding-bottom: 20px;
+}
+
+/* 
+.home-logo {
+    height: 100px;
+    position:fixed;
+    bottom:0px;
+    right:2%;
+    object-fit: contain;
+  } */

@@ -34,30 +34,27 @@ export default function BudgetDetails() {
     };
   
     return (
-      <div className='transaction_show' >
-        <div>
-       
+      <div className='show' >
+        <h1 className='show-title'>{transaction.item_name}</h1>
+        <div className='show-details'>
+        <p className='show_p'>Date: {transaction.date}</p>
+        <p className='show_p'>Amount: ${transaction.amount}</p>
+        <p className='show_p'>From: {transaction.from}</p>
+        <p className='show_p'>Category: {transaction.category}</p>
         </div>
-        
-        <p>Date: {transaction.date}</p>
-        <p>Name: {transaction.item_name}</p>
-        <p>Amount: ${transaction.amount}</p>
-        <p>From: {transaction.from}</p>
-        <p>Category: {transaction.category}</p>
-  
-        <div className="buttons_Show">
+        <div>
           <div>
             <Link to={`/transaction`}>
-              <button className='back_show_button'>Back</button>
+              <button className='show_button'>Back</button>
             </Link>
           </div>
           <div>
             <Link to={`/transaction/${index}/edit`}>
-              <button className='edit_show_button' >Edit</button>
+              <button className='show_button' >Edit</button>
             </Link>
           </div>
           <div>
-            <button className='delete_show_button' onClick={handleDelete}>Delete</button>
+            <button className='show_button' onClick={handleDelete}>Delete</button>
           </div>
         </div>
       </div>

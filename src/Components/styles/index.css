@@ -1,0 +1,59 @@
+.Index{
+  text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    justify-content: center;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    background-color: black; 
+    font-family: 'Michroma', sans-serif;
+  
+}
+
+.budgets_title {
+  font-size: 40px;
+  font-family: 'Michroma', sans-serif;
+  color: #52A5EF;
+}
+
+.red {
+    color: #ff0000;
+  }
+  .pink {
+    color: #d28cd1;
+  }
+  span.green {
+    color: #2B7A0B;
+  }
+  
+  .table { 
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: separate;
+    border-spacing: 40px 30px;
+  
+  }
+
+  .budgets_title{
+    padding-bottom: 1em;
+    padding-top: 20px;
+  }
+
+ .backbutton {
+  background-color: #1269ff;
+  font-size: 20px;
+  border-radius: 4px;
+  padding: 10px;
+  padding-left: 2%;
+  padding-right: 2%; 
+  width: 50%;
+  margin: auto;
+  font-family: 'Michroma', sans-serif;
+ } 
+
+.total {
+font-size: 30px;
+color: #52A5EF;
+}

@@ -30,9 +30,11 @@ export default function BudgetNewForm() {
       });
   };
   return (
-    <div className="New">
+    <div className="new">
+      <h1 className="new-title">Create New Item</h1>
       <form onSubmit={handleSubmit} autoComplete="on">
-        <label htmlFor="date">Date:</label>
+        <label htmlFor="date">Date</label>
+        <br></br>
         <input
           id="date"
           type="date"
@@ -40,7 +42,9 @@ export default function BudgetNewForm() {
           onChange={handleTextChange}
           required
         />
-        <label htmlFor="item_name">Item Name:</label>
+        <br></br>
+        <label htmlFor="item_name">Item Name</label>
+        <br></br>
         <input
           id="item_name"
           value={transaction.item_name}
@@ -49,7 +53,9 @@ export default function BudgetNewForm() {
           placeholder="Item Name"
           required
         />
-        <label htmlFor="amount">Amount:</label>
+        <br></br>
+        <label htmlFor="amount">Amount</label>
+        <br></br>
         <input
           id="amount"
           type="number"
@@ -59,7 +65,9 @@ export default function BudgetNewForm() {
           onChange={handleTextChange}
           required
         />
-        <label htmlFor="from">From:</label>
+        <br></br>
+        <label htmlFor="from">From</label>
+        <br></br>
         <input
           id="from"
           type="text"
@@ -69,7 +77,9 @@ export default function BudgetNewForm() {
           placeholder="from"
           required
         />
-        <label htmlFor="category">Category:</label>
+        <br></br>
+        <label className="label" htmlFor="category">Category</label>
+        <br></br>
         <input
           id="category"
           value={transaction.category}
@@ -78,8 +88,8 @@ export default function BudgetNewForm() {
           placeholder="Category"
           required
         />
-
-        <input type="submit"  value="Create New Item" />
+<br></br>
+        <input className="create-button" type="submit"  value="New Item" />
       </form>
     </div>
   );

@@ -1,0 +1,32 @@
+nav {
+    background: #4caae8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    box-shadow: 2px 2px 4px grey;
+    margin-bottom: 1em;
+    font-family: 'Michroma', sans-serif;
+ 
+}
+
+
+a:link { text-decoration: none; 
+color: #4eded4;
+}
+
+a:visited {
+    color: #1d13de;
+  }
+
+.logo {
+    height: 40px;
+}
+
+.new-button{
+    padding: 15px;
+   background-color: #1269ff;
+   border-radius: 10px;
+   font-family: 'Michroma', sans-serif;
+color: white;
+}
